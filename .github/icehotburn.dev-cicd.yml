@@ -10,7 +10,6 @@ on:
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/main'
     defaults:
       run:
         working-directory: icehotburn.dev
