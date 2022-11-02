@@ -1,0 +1,8 @@
+localhost {
+
+    handle /* {
+
+        reverse_proxy icehotburn.dev:80
+
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+        "enabled": true,
+        "gitUrl":"https://github.com/Icehotburn/Icehotburn",
+        "projectUrl": "/",
+        "id": "a1b1d457-81ee-47c5-b35d-e729b122f55d",
+        "tags": ["#vue3"],
+        "thumbnail":"/Website-building-landscape.jpg",
+        "title":"Icehotburn.dev"
+    },
+    {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+        "enabled": false,
+        "gitUrl":"https://github.com/Icehotburn/Icehotburn",
+        "projectUrl": "/about",
+        "id": "b1b1d457-81ee-47c5-b35d-e729b122f55d",
+        "tags": ["#python", "#vue3", "#wrtc"],
+        "thumbnail":"/Sunset.jpg",
+        "title":"Puppy Monitor"
+    },
+    {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "enabled": true,
+        "gitUrl":"https://github.com/Icehotburn/Icehotburn",
+        "projectUrl": "/about",
+        "id": "c1b1d457-81ee-47c5-b35d-e729b122f55d",
+        "tags": ["#nestJs"],
+        "thumbnail":"/House-for-sale.jpg",
+        "title":"Rental Property Scraper"
+    }
+]

@@ -1,0 +1,9 @@
+version: '3.9'
+services:  
+    icehotburn.dev:
+      build:
+        context: ./icehotburn.dev
+        target: development
+      restart: unless-stopped
+      ports:
+          - "5173:5173"
