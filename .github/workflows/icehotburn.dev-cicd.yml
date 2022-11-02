@@ -40,6 +40,7 @@ jobs:
         working-directory: icehotburn.dev
     env:
       REGISTRY: ghcr.io
+      OWNER: icehotburn
       IMAGE_NAME: icehotburn-dev
     permissions:
       contents: read
@@ -60,7 +61,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.OWNER }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
