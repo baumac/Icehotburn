@@ -34,7 +34,7 @@ jobs:
       - run: npm run test:e2e:ci
   build_and_publish:
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     defaults:
       run:
         working-directory: icehotburn.dev
