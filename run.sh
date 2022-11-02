@@ -56,12 +56,12 @@ frontendBuild() {
 
 frontendUnitTests() {
     echo "Running the frontend for icehotburn.dev unit tests inside the docker container"
-    docker-compose f docker-compose-dev.yml run --no-deps --rm app npm test
+    docker-compose -f docker-compose-dev.yml run --no-deps --rm app npm test
 }
 
 frontendE2eTests() {
     echo "Running the frontend for icehotburn.dev e2e tests inside the docker container"
-    docker-compose f docker-compose-dev.yml run app npm run test:e2e
+    docker-compose -f docker-compose-dev.yml run app npm run test:e2e
 }
 
 _main "$@"

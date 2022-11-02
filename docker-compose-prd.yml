@@ -5,7 +5,7 @@ services:
       image: containrrr/watchtower:1.4.0
       restart: unless-stopped
       environment:
-        WATCHTOWER_POLL_INTERVAL: 3600 # aka every hour. How often to poll (in seconds) for new images
+        WATCHTOWER_POLL_INTERVAL: 3600
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
     # Run the caddy server as a reverse proxy   
@@ -24,9 +24,7 @@ services:
         - caddy_config:/config
     # Run the front end for icehotburn.dev
     icehotburn.dev:
-      build:
-        context: ./icehotburn.dev
-        target: production
+      image: "ghcr.io/icehotburn/icehotburn-dev:main"
       restart: unless-stopped
 volumes:
   caddy_data:
