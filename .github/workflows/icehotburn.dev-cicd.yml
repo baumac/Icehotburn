@@ -25,7 +25,7 @@ jobs:
             changed:
               - 'icehotburn.dev/**'
 
-  # JOB to build and test the code in incehotburn.dev
+  # JOB to build and test the code in icehotburn.dev
   build_and_test_code:
     needs: changes
     if: ${{ github.ref != 'refs/heads/main'  && needs.changes.outputs.changed == 'true' }}
@@ -33,21 +33,17 @@ jobs:
     defaults:
       run:
         working-directory: icehotburn.dev
-    strategy:
-      matrix:
-        node-version: [18.12.0]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js 18.12.0
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18.12.0
           cache: "npm"
           cache-dependency-path: icehotburn.dev/package-lock.json
-      - name: Build and test with Node.js ${{ matrix.node-version }}
+      - name: Build and test with Node.js 18.12.0
         run: |
           npm ci
           npm run build
