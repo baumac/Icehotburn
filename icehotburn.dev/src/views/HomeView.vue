@@ -7,7 +7,7 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
     <div class="w-8/12 flex flex-col">
       <h1 class="text-6xl">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
-        Aka Icehotburn to my online friends 🎮
+        Aka Icehotburn to my gamer friends 🎮
         <br />
         <br />
         I'm a software engineer who creates projects with the goal of making
