@@ -16,14 +16,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Detect changes in icehotburn.dev/*
         uses: dorny/paths-filter@v2
         id: filter
         with:
           filters: |
             changed:
-              - 'icehotburn.dev/**'    
+              - 'icehotburn.dev/**'
 
   # JOB to build and test the code in incehotburn.dev
   build_and_test:
@@ -41,17 +41,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Build and test with Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
           cache-dependency-path: icehotburn.dev/package-lock.json
-        run: npm ci
-        run: npm run build
-        run: npm run test:unit
-        run: npm run test:e2e:ci
-  
+      - name: Build and test with Node.js ${{ matrix.node-version }}
+        run: |
+          npm ci
+          npm run build
+          npm run test:unit
+          npm run test:e2e:ci
+
   # JOB to build and publish a docker image for the code in incehotburn.dev
   build_and_publish:
     runs-on: ubuntu-latest
