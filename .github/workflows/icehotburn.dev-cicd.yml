@@ -4,14 +4,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "icehotburn.dev/**"
   pull_request:
     branches:
       - main
-    paths:
-      - "icehotburn.dev/**"
-
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
@@ -33,10 +28,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
           cache-dependency-path: icehotburn.dev/package-lock.json
-      - run: npm ci
-      - run: npm run build
-      - run: npm run test:unit
-      - run: npm run test:e2e:ci
+        run: npm ci
+        run: npm run build
+        run: npm run test:unit
+        run: npm run test:e2e:ci
   build_and_publish:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
