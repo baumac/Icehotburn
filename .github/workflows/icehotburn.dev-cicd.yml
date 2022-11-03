@@ -9,7 +9,7 @@ on:
       - main
 jobs:
   # JOB to run change detection
-  changes:
+  change_detection:
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.filter.outputs.changed }}
@@ -27,8 +27,8 @@ jobs:
 
   # JOB to build and test the code in icehotburn.dev
   build_and_test_code:
-    needs: changes
-    if: ${{ github.ref != 'refs/heads/main'  && needs.changes.outputs.changed == 'true' }}
+    needs: change_detection
+    if: ${{ github.ref != 'refs/heads/main'  && needs.change_detection.outputs.changed == 'true' }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -52,8 +52,8 @@ jobs:
 
   # JOB to build and publish a docker image for the code in incehotburn.dev
   build_and_publish_image:
-    needs: changes
-    if: ${{ github.ref == 'refs/heads/main' && needs.changes.outputs.changed == 'true' }}
+    needs: change_detection
+    if: ${{ github.ref == 'refs/heads/main' && needs.change_detection.outputs.changed == 'true' }}
     runs-on: ubuntu-latest
     defaults:
       run:
