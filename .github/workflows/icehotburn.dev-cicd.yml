@@ -87,6 +87,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./icehotburn.dev
+          platforms: linux/arm64/v8,linux/amd64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
