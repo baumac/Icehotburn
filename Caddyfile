@@ -1,6 +1,0 @@
-icehotburn.dev {
-    tls c.bauma.349@gmail.com
-	handle /* {
-		reverse_proxy icehotburn.dev:80
-	}
-}
