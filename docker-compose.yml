@@ -8,26 +8,20 @@ services:
         WATCHTOWER_POLL_INTERVAL: 3600
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
-    # Run the caddy server as a reverse proxy   
-    reverse_proxy: 
-      image: caddy:2.6.2-alpine
+    # Run cloudflared to tunnel out of ISP's CGNAT
+    tunnel: 
+      image: cloudflare/cloudflared
       restart: unless-stopped
+      command: tunnel --no-autoupdate run
       deploy:
         labels:
           com.centurylinklabs.watchtower.enable: "false"
-      ports:
-          - "80:80"
-          - "443:443"
-      volumes:            
-        - $PWD/Caddyfile:/etc/caddy/Caddyfile
-        - caddy_data:/data
-        - caddy_config:/config
+      environment:
+        - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
     # Run the front end for icehotburn.dev
     icehotburn.dev:
       image: "ghcr.io/icehotburn/icehotburn-dev:main"
       restart: unless-stopped
-volumes:
-  caddy_data:
-  caddy_config: 
+
 
 
