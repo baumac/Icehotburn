@@ -4,7 +4,7 @@
 
 1. Create a .env file by copying the .env.default file
 2. Set the env vars in the .env file
-3. Run `docker-compose up` to start the app and tunnel (the tunnel is configured to route traffic from port 80 of the icehotburn.dev container to https://icehotburn.dev)
+3. Run `docker-compose -f docker-compose-prod.yml up` to start the app and tunnel (the tunnel is configured to route traffic from port 80 of the icehotburn.dev container to https://icehotburn.dev)
 
 ## Networking Setup
 
