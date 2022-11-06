@@ -31,6 +31,7 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
           alt="Photo of my family"
         />
         <h1 class="m-auto pt-3">Carla and I</h1>
+        <!-- TODO make the image look okay on mobile -->
       </div>
     </div>
   </div>
