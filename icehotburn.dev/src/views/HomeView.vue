@@ -3,7 +3,7 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
 </script>
 
 <template>
-  <div class="p-4 flex md:pt-14 md:pb-14 md:border-b-4">
+  <div class="flex md:pb-14 md:border-b-4">
     <div class="md:w-8/12 flex flex-col">
       <h1 class="text-6xl">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
@@ -11,8 +11,8 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
         <br />
         <br />
         I'm a software engineer with a passion for building scalable,
-        maintainable, and easy to use tools to make life easier. I like sports,
-        the outdoors, video games, and food.
+        maintainable, and easy to use tools that make life easier. I like
+        sports, the outdoors, video games, and food.
         <br />
         <br />
         Check out

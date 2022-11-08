@@ -6,7 +6,7 @@ import AppFooter from "./components/AppFooter.vue";
 
 <template>
   <NavBar />
-  <div class="min-h-screen max-w-screen-lg mx-auto">
+  <div class="min-h-screen max-w-screen-lg mx-auto p-4 md:pt-14">
     <RouterView />
   </div>
   <AppFooter />
