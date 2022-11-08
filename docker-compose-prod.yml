@@ -8,7 +8,7 @@ services:
         WATCHTOWER_POLL_INTERVAL: 3600
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
-    # Run cloudflared to tunnel out of ISP's CGNAT
+    # Run cloudflared to tunnel out of ISP's CGNAT and expose services to the open internet
     tunnel: 
       image: cloudflare/cloudflared
       restart: unless-stopped
@@ -18,6 +18,20 @@ services:
           com.centurylinklabs.watchtower.enable: "false"
       environment:
         - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    # Run cadvisor to monitor host and container metrics
+    cadvisor:
+      image: gcr.io/cadvisor/cadvisor:v0.45.0
+      restart: unless-stopped
+      privileged: true
+      devices:
+        - /dev/kmsg:/dev/kmsg
+      ports:
+        - '8080:8080'
+      volumes:
+        - /:/rootfs:ro
+        - /var/run:/var/run:ro
+        - /sys:/sys:ro
+        - /var/lib/docker:/var/lib/docker:ro
     # Run the front end for icehotburn.dev
     icehotburn.dev:
       image: "ghcr.io/icehotburn/icehotburn-dev:main"
