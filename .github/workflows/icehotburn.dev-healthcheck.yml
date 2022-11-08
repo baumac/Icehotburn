@@ -9,6 +9,7 @@ permissions: {}
 jobs:
   # JOB to run healthcheck
   healthcheck:
+    runs-on: ubuntu-latest
     steps:
       - name: Check that icehotburn.dev is up
         uses: jtalk/url-health-check-action@v2
