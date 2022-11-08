@@ -3,8 +3,8 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
 </script>
 
 <template>
-  <div class="flex md:pt-14 pb-14 border-b-4">
-    <div class="w-8/12 flex flex-col">
+  <div class="p-4 flex md:pt-14 md:pb-14 md:border-b-4">
+    <div class="md:w-8/12 flex flex-col">
       <h1 class="text-6xl">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
         Aka Icehotburn to my gamer friends 🎮
@@ -23,7 +23,7 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
       </p>
     </div>
 
-    <div class="w-4/12 flex flex-col">
+    <div class="p-4 md:p-0 hidden md:w-4/12 md:flex flex-col">
       <div class="mx-4 py-4 text-center bg-gray-200 rounded-lg">
         <img
           class="m-auto h-60 object-contain"
@@ -31,12 +31,11 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
           alt="Photo of my family"
         />
         <h1 class="m-auto pt-3">Carla and I</h1>
-        <!-- TODO make the image look okay on mobile -->
       </div>
     </div>
   </div>
   <div>
-    <h1 class="pt-12 text-4xl pb-8">Featured Projects</h1>
+    <h1 class="p-4 md:pt-12 text-4xl pb-8">Featured Projects</h1>
     <ProjectCatalog :showLimit="3" />
   </div>
 </template>
