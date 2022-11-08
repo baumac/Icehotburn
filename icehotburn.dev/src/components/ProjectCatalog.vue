@@ -28,7 +28,7 @@ projectStore.fetchProjects();
   </div>
   <div
     v-else
-    class="mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+    class="mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center"
   >
     <ProjectCard
       v-for="project in projectStore.allProjects"

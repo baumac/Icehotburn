@@ -7,17 +7,16 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
     <div class="md:w-8/12 flex flex-col">
       <h1 class="text-6xl">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
-        Aka Icehotburn to my gamer friends 🎮
+        Aka Icehotburn to my internet friends 🎮
         <br />
         <br />
-        I'm a software engineer who creates projects with the goal of making
-        life easier. I like sports, the outdoors, video games, and food.
+        I'm a software engineer with a passion for building scalable,
+        maintainable, and easy to use tools to make life easier. I like sports,
+        the outdoors, video games, and food.
         <br />
         <br />
         Check out
-        <RouterLink class="text-sky-500" to="/projects">my projects</RouterLink
-        >, read about
-        <RouterLink class="text-sky-500" to="/blog">my experiences</RouterLink>,
+        <RouterLink class="text-sky-500" to="/projects">my projects</RouterLink>
         or learn more
         <RouterLink class="text-sky-500" to="/about">about me</RouterLink>!
       </p>

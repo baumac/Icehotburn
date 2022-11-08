@@ -37,9 +37,6 @@ const showMenu = ref(false);
           <RouterLink to="/about">About</RouterLink>
         </li>
         <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <RouterLink to="/blog">Blog</RouterLink>
-        </li>
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
           <RouterLink to="/projects">Projects</RouterLink>
         </li>
         <li class="flex md:pl-6 md:border-l md:border-slate-200">
