@@ -1,4 +1,17 @@
+![Icehotburn.dev CICD Workflow](https://github.com/Icehotburn/Icehotburn/actions/workflows/icehotburn.dev-cicd.yml/badge.svg)
+![Icehotburn.dev Healthcheck Workflow](https://github.com/Icehotburn/Icehotburn/actions/workflows/icehotburn.dev-healthcheck.yml/badge.svg)
+
 # TODO write a post explaining the project and tech stack
+
+## Tech Stack
+
+1. Healthcheck via github actions
+2. CICD workflow via github actions
+3. Website developed using vue3
+4. Self hosted on Raspberry Pi 3b
+5. Uses Cloudflare tunnels to expose the service (my ISP uses a CGNAT so I don't have a static IP :()
+6. Cadvisor for Docker host monitoring
+7. Watchtower to perform rolling deploys when a new version of the app is released
 
 ## Running the repo
 
