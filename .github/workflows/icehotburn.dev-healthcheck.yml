@@ -2,7 +2,7 @@ name: Icehotburn.dev Healthcheck
 
 on:
   schedule:
-    - cron: "0/5 * * * *"
+    - cron: "*/5 * * * *" # minimum time period for scheduled runs is 5 minutes
 
 permissions: {}
 
