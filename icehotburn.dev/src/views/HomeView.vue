@@ -3,9 +3,9 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
 </script>
 
 <template>
-  <div class="flex md:pb-14 md:border-b-4">
+  <div class="flex pb-8 md:pb-14 border-b-4">
     <div class="md:w-8/12 flex flex-col">
-      <h1 class="text-6xl">Hi, I'm Chris!</h1>
+      <h1 class="text-5xl font-bold">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
         Aka Icehotburn to my internet friends 🎮
         <br />
@@ -16,9 +16,18 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
         <br />
         <br />
         Check out
-        <RouterLink class="text-sky-500" to="/projects">my projects</RouterLink>
-        or learn more
-        <RouterLink class="text-sky-500" to="/about">about me</RouterLink>!
+        <RouterLink class="text-sky-500 hover:underline" to="/projects"
+          >my projects</RouterLink
+        >, learn more
+        <RouterLink class="text-sky-500 hover:underline" to="/about"
+          >about me</RouterLink
+        >, or connect on
+        <a
+          class="text-sky-500 hover:underline"
+          href="https://www.linkedin.com/in/chrisbaumann349/"
+        >
+          LinkedIn</a
+        >!
       </p>
     </div>
 
@@ -33,8 +42,8 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
       </div>
     </div>
   </div>
-  <div>
-    <h1 class="p-4 md:pt-12 text-4xl pb-8">Featured Projects</h1>
+  <div class="pb-8">
+    <h1 class="text-4xl font-bold py-8 md:px-0">Featured Projects</h1>
     <ProjectCatalog :showLimit="3" />
   </div>
 </template>

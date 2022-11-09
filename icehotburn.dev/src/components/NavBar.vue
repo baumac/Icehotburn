@@ -8,7 +8,7 @@ const showMenu = ref(false);
 <template>
   <div class="w-full border-b border-slate-900/10">
     <nav
-      class="max-w-screen-2xl mx-auto px-6 py-6 mx-auto md:flex md:justify-between md:items-center"
+      class="max-w-screen-2xl px-6 py-6 mx-auto md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
         <RouterLink to="/" class="flex">
