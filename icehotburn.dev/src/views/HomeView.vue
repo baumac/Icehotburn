@@ -3,27 +3,35 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
 </script>
 
 <template>
-  <div class="flex md:pt-14 pb-14 border-b-4">
-    <div class="w-8/12 flex flex-col">
-      <h1 class="text-6xl">Hi, I'm Chris!</h1>
+  <div class="flex pb-8 md:pb-14 border-b-4">
+    <div class="md:w-8/12 flex flex-col">
+      <h1 class="text-5xl font-bold">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
-        Aka Icehotburn to my gamer friends 🎮
+        Aka Icehotburn to my internet friends 🎮
         <br />
         <br />
-        I'm a software engineer who creates projects with the goal of making
-        life easier. I like sports, the outdoors, video games, and food.
+        I'm a software engineer with a passion for building scalable,
+        maintainable, and easy to use tools that make life easier. I like
+        sports, the outdoors, video games, and food.
         <br />
         <br />
         Check out
-        <RouterLink class="text-sky-500" to="/projects">my projects</RouterLink
-        >, read about
-        <RouterLink class="text-sky-500" to="/blog">my experiences</RouterLink>,
-        or learn more
-        <RouterLink class="text-sky-500" to="/about">about me</RouterLink>!
+        <RouterLink class="text-sky-500 hover:underline" to="/projects"
+          >my projects</RouterLink
+        >, learn more
+        <RouterLink class="text-sky-500 hover:underline" to="/about"
+          >about me</RouterLink
+        >, or connect on
+        <a
+          class="text-sky-500 hover:underline"
+          href="https://www.linkedin.com/in/chrisbaumann349/"
+        >
+          LinkedIn</a
+        >!
       </p>
     </div>
 
-    <div class="w-4/12 flex flex-col">
+    <div class="p-4 md:p-0 hidden md:w-4/12 md:flex flex-col">
       <div class="mx-4 py-4 text-center bg-gray-200 rounded-lg">
         <img
           class="m-auto h-60 object-contain"
@@ -34,8 +42,8 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
       </div>
     </div>
   </div>
-  <div>
-    <h1 class="pt-12 text-4xl pb-8">Featured Projects</h1>
+  <div class="pb-8">
+    <h1 class="text-4xl font-bold py-8 md:px-0">Featured Projects</h1>
     <ProjectCatalog :showLimit="3" />
   </div>
 </template>

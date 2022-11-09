@@ -13,6 +13,12 @@
 6. Cadvisor for Docker host monitoring
 7. Watchtower to perform rolling deploys when a new version of the app is released
 
+### Future things I want to do:
+
+1. Get a static IP and remove the dependency on cloudflare
+2. Create my own custom healthcheck action
+3. More advance monitoring with promethus https://thesmarthomejourney.com/2022/08/01/fixing-cadvisor-cpu/
+
 ## Running the repo
 
 1. Create a .env file by copying the .env.default file

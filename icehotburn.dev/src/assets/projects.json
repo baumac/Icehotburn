@@ -1,8 +1,8 @@
 [
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+        "description": "Aka my personal website. This beauty gives people an insight into my life and provides a user interface for my projects.", 
         "enabled": true,
-        "gitUrl":"https://github.com/Icehotburn/Icehotburn",
+        "gitUrl":"https://github.com/Icehotburn/Icehotburn/tree/main/icehotburn.dev",
         "projectUrl": "/",
         "id": "a1b1d457-81ee-47c5-b35d-e729b122f55d",
         "tags": ["#vue3"],
@@ -10,22 +10,22 @@
         "title":"Icehotburn.dev"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+        "description": "A baby monitor with bark detection! It's intended to help monitor our puppy Kobe.",
         "enabled": false,
         "gitUrl":"https://github.com/Icehotburn/Icehotburn",
         "projectUrl": "/about",
         "id": "b1b1d457-81ee-47c5-b35d-e729b122f55d",
         "tags": ["#python", "#vue3", "#wrtc"],
-        "thumbnail":"/Sunset.jpg",
+        "thumbnail":"/Puppy.webp",
         "title":"Puppy Monitor"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        "enabled": true,
-        "gitUrl":"https://github.com/Icehotburn/Icehotburn",
+        "description": "A scraper for real estate listings. It scrapes and ranks real estate listings based on their potential rental property income.",
+        "enabled": false,
+        "gitUrl":"https://github.com/Icehotburn/RentalPropertyScraper",
         "projectUrl": "/about",
         "id": "c1b1d457-81ee-47c5-b35d-e729b122f55d",
-        "tags": ["#nestJs"],
+        "tags": ["#python"],
         "thumbnail":"/House-for-sale.jpg",
         "title":"Rental Property Scraper"
     }

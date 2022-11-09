@@ -9,7 +9,7 @@ defineProps({
 <template>
   <RouterLink
     v-if="enabled"
-    class="mx-auto hover:cursor-pointer relative"
+    class="hover:cursor-pointer relative"
     :to="projectUrl"
   >
     <img
@@ -20,8 +20,11 @@ defineProps({
 
     <div class="absolute left-0 top-0 h-16 w-16">
       <div
-        class="absolute left-[-28px] top-[40px] w-32 transform -rotate-45 bg-indigo-500 text-center text-white font-semibold"
+        class="absolute left-[-40px] top-[25px] w-40 transform -rotate-45 bg-indigo-500 text-center text-white font-semibold"
       >
+        <!-- <div
+        class="absolute transform -rotate-45 bg-indigo-500 text-center text-white font-semibold py-1 left-[-34px] top-[32px] w-[170px]"
+      > -->
         Try me!
       </div>
     </div>
