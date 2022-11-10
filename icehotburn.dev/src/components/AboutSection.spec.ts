@@ -10,7 +10,7 @@ beforeEach(() => {
       title: "title",
       updatedDate: "Updated November 9th, 2022",
       content: "foo",
-      isHeader: "true",
+      isHeader: true,
     },
   });
 });
