@@ -13,9 +13,9 @@ const showMoreInfo = props.isHeader ? ref(true) : ref(false);
 </script>
 <template>
   <div class="flex flex-col flex-1">
-    <div class="pt-4 flex justify-between border-b-4">
+    <div class="flex justify-between border-b-4">
       <h1 v-if="isHeader" class="text-5xl pb-6 font-bold">{{ title }}</h1>
-      <h2 v-else class="text-4xl mb-2 pb-2">{{ title }}</h2>
+      <h2 v-else class="text-4xl pt-4 mb-2 pb-2">{{ title }}</h2>
       <!-- Mobile showMore button -->
       <div @click="showMoreInfo = !showMoreInfo" class="md:hidden flex">
         <button
