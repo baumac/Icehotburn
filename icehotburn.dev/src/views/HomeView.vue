@@ -7,7 +7,11 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
     <div class="md:w-8/12 flex flex-col">
       <h1 class="text-5xl font-bold">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
-        Aka Icehotburn to my internet friends 🎮
+        <span class="md:hidden">Aka Icehotburn 🎮💻</span>
+        <span class="hidden md:inline"
+          >Aka Icehotburn to my internet friends 🎮💻</span
+        >
+
         <br />
         <br />
         I'm a software engineer with a passion for building scalable,

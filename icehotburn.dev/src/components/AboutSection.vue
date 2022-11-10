@@ -5,7 +5,7 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/vue/24/solid";
 const props = defineProps({
   content: { type: String, required: true },
   title: { type: String, required: true },
-  updatedDate: { type: String, required: false },
+  updatedDate: { type: String, required: true },
   isHeader: { type: Boolean, required: true },
 });
 
