@@ -31,9 +31,9 @@ import CaptionedImage from "@/components/CaptionedImage.vue";
       />
     </div>
     <div class="hidden md:w-4/12 md:flex flex-col">
-      <CaptionedImage class="my-4" :image="'/Family.jpg'" :caption="'Me'" />
-      <CaptionedImage class="my-4" :image="'/Family.jpg'" :caption="'Carla'" />
-      <CaptionedImage class="my-4" :image="'/Family.jpg'" :caption="'Kobe'" />
+      <CaptionedImage class="my-4" :image="'/Me.jpg'" :caption="'Me'" />
+      <CaptionedImage class="my-4" :image="'/Carla.png'" :caption="'Carla'" />
+      <CaptionedImage class="my-4" :image="'/Kobe.png'" :caption="'Kobe'" />
     </div>
   </div>
 </template>
