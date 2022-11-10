@@ -12,7 +12,7 @@
     {
         "description": "A baby monitor with bark detection! It's intended to help monitor our puppy Kobe.",
         "enabled": false,
-        "gitUrl":"https://github.com/Icehotburn/Icehotburn",
+        "gitUrl":"https://github.com/Icehotburn/puppy_monitor",
         "projectUrl": "/about",
         "id": "b1b1d457-81ee-47c5-b35d-e729b122f55d",
         "tags": ["#python", "#vue3", "#wrtc"],

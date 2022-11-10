@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ProjectCatalog from "../components/ProjectCatalog.vue";
+import CaptionedImage from "@/components/CaptionedImage.vue";
 </script>
 
 <template>
@@ -7,7 +8,11 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
     <div class="md:w-8/12 flex flex-col">
       <h1 class="text-5xl font-bold">Hi, I'm Chris!</h1>
       <p class="mt-6 text-xl">
-        Aka Icehotburn to my internet friends 🎮
+        <span class="md:hidden">Aka Icehotburn 🎮💻</span>
+        <span class="hidden md:inline"
+          >Aka Icehotburn to my internet friends 🎮💻</span
+        >
+
         <br />
         <br />
         I'm a software engineer with a passion for building scalable,
@@ -32,14 +37,7 @@ import ProjectCatalog from "../components/ProjectCatalog.vue";
     </div>
 
     <div class="p-4 md:p-0 hidden md:w-4/12 md:flex flex-col">
-      <div class="mx-4 py-4 text-center bg-gray-200 rounded-lg">
-        <img
-          class="m-auto h-60 object-contain"
-          src="/Family.jpg"
-          alt="Photo of my family"
-        />
-        <h1 class="m-auto pt-3">Carla and I</h1>
-      </div>
+      <CaptionedImage :image="'/Family.jpg'" :caption="'Carla and I'" />
     </div>
   </div>
   <div class="pb-8">

@@ -10,6 +10,7 @@ beforeEach(() => {
       title: "title",
       updatedDate: "Updated November 9th, 2022",
       content: "foo",
+      isHeader: true,
     },
   });
 });
@@ -19,7 +20,9 @@ describe("AboutSection", () => {
     expect(wrapper.exists());
   });
 
-  it.todo("renders the title");
+  it.todo("renders the title when isHeader is true");
+
+  it.todo("renders the title when isHeader is false");
 
   it.todo("renders the updatedDate");
 
