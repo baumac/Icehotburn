@@ -2,18 +2,20 @@
 import { ref } from "vue";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/vue/24/solid";
 
-defineProps({
+const props = defineProps({
   content: { type: String, required: true },
   title: { type: String, required: true },
   updatedDate: { type: String, required: false },
+  isHeader: { type: Boolean, required: true },
 });
 
-const showMoreInfo = ref(false);
+const showMoreInfo = props.isHeader ? ref(true) : ref(false);
 </script>
 <template>
   <div class="flex flex-col flex-1">
     <div class="pt-4 flex justify-between border-b-4">
-      <h2 class="text-4xl mb-2 pb-2">{{ title }}</h2>
+      <h1 v-if="isHeader" class="text-5xl pb-6 font-bold">{{ title }}</h1>
+      <h2 v-else class="text-4xl mb-2 pb-2">{{ title }}</h2>
       <!-- Mobile showMore button -->
       <div @click="showMoreInfo = !showMoreInfo" class="md:hidden flex">
         <button
