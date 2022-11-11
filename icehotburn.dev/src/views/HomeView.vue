@@ -21,14 +21,14 @@ import CaptionedImage from "@/components/CaptionedImage.vue";
         <br />
         <br />
         Check out
-        <RouterLink class="text-sky-500 hover:underline" to="/projects"
+        <RouterLink class="text-blue-600 hover:underline" to="/projects"
           >my projects</RouterLink
         >, learn more
-        <RouterLink class="text-sky-500 hover:underline" to="/about"
+        <RouterLink class="text-blue-600 hover:underline" to="/about"
           >about me</RouterLink
         >, or connect on
         <a
-          class="text-sky-500 hover:underline"
+          class="text-blue-600 hover:underline"
           href="https://www.linkedin.com/in/chrisbaumann349/"
         >
           LinkedIn</a
