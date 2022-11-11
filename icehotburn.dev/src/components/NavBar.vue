@@ -17,6 +17,7 @@ const showMenu = ref(false);
         <!-- Mobile menu button -->
         <div @click="showMenu = !showMenu" class="flex md:hidden">
           <button
+            aria-label="Expand menu"
             type="button"
             class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
           >

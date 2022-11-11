@@ -9,8 +9,8 @@
         kind, sully the sight with ads, nor take any other action that might
         infringe on the site's puprpose or usability. Feel free to view the
         site's source code
-        <a class="text-sky-500 underline" href="https://github.com/Icehotburn">
-          here</a
+        <a class="text-blue-600 underline" href="https://github.com/Icehotburn">
+          on Github</a
         >.
       </p>
     </div>

@@ -33,6 +33,7 @@ const showMoreInfo = ref(false);
         <div @click="showMoreInfo = !showMoreInfo" class="md:hidden">
           <button
             type="button"
+            aria-label="Show more info"
             class="align-middle text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
           >
             <ChevronUpIcon v-if="showMoreInfo" class="w-6 h-6 fill-current" />

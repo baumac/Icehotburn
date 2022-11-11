@@ -19,6 +19,7 @@ const showMoreInfo = props.isHeader ? ref(true) : ref(false);
       <!-- Mobile showMore button -->
       <div @click="showMoreInfo = !showMoreInfo" class="md:hidden flex">
         <button
+          aria-label="Show more info"
           type="button"
           class="align-middle text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
         >
