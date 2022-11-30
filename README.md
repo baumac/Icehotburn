@@ -30,10 +30,15 @@
 1. Domain is registered with google domains with cloudflare name servers (this also provides automatic tls)
 2. Website is exposed from my local server via Cloudflare tunnels
 
+## Monitoring Project
+
+1. Give credit to the dockerprom project for the monitoring directory https://github.com/stefanprodan/dockprom
+2. One day add dependabot for the compose file https://github.com/dependabot/dependabot-core/issues/390
+
 ## Add a section for adding a new project
 
 1. Create a new directory
-2. Create a workflow for the project
-3. Add dependabot
-4. Add the new service to the docker compose files
-5. If needed update the caddyfile to route traffic to the new service
+2. In the .github directory
+   - Create a workflow for the project
+   - Add dependabot woprkflow
+3. Add the new service to the docker compose files
