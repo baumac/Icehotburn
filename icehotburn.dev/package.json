@@ -13,7 +13,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.17",
+    "@heroicons/vue": "^2.0.18",
     "autoprefixer": "^10",
     "pinia": "^2.0.35",
     "postcss": "^8",
